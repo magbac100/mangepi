@@ -20,12 +20,12 @@ th {text-align: left;}
 <?php
 $q = intval($_GET['q']);
 
-$con = mysqli_connect('192.168.0.16:3306','vilgot','lass');
+$con = mysqli_connect('ip:port','user','pawd');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
 
-mysqli_select_db($con,"mb");
+mysqli_select_db($con,"db");
 $sql="SELECT * FROM user WHERE id = '".$q."'";
 $result = mysqli_query($con,$sql);
 
