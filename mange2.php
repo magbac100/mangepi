@@ -8,8 +8,8 @@ table {
 }
 
 table, td, th {
-    border: 1px solid black;
-    padding: 5px;
+    border: 1px solid blue;
+    padding: 6px;
 }
 
 th {text-align: left;}
